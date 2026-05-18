@@ -1,11 +1,22 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FiArrowRight, FiClock, FiFilter } from 'react-icons/fi';
+import { FiArrowRight, FiClock, FiStar, FiUsers } from 'react-icons/fi';
 import { servicesData } from '../data/servicesData';
 import SectionTitle from '../components/common/SectionTitle';
 import AppointmentCTA from '../components/home/AppointmentCTA';
 import { staggerContainer, staggerItem, pageTransition } from '../utils/animations';
+
+// Model image imports
+import girl1 from '../assets/model/girl1.jpeg';
+import girl2 from '../assets/model/girl2.jpeg';
+import girl3 from '../assets/model/girl3.jpeg';
+
+const featuredModels = [
+  { id: 1, name: 'Ananya Sharma', specialty: 'Bridal & Glam Makeup', img: girl1 },
+  { id: 2, name: 'Priya Mehta',   specialty: 'Skin & Facial Care',   img: girl2 },
+  { id: 3, name: 'Kavya Nair',    specialty: 'Hair Styling Expert',  img: girl3 },
+];
 
 const categories = ['All', 'Face', 'Body', 'Hair', 'Beauty', 'Wellness'];
 
@@ -148,6 +159,117 @@ const ServicesPage = () => {
                 </div>
               </motion.div>
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Meet Our Models */}
+      <section className="section-padding" style={{ background: 'linear-gradient(180deg, #0a0814 0%, #0f0c1f 100%)' }}>
+        <div className="container-custom">
+          {/* Heading */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <span className="section-tag mb-4 inline-block">Our Beauty Artists</span>
+            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-white mb-4">
+              Meet Our{' '}
+              <span className="gradient-text italic">Models</span>
+            </h2>
+            <p className="text-nude-300 text-lg max-w-xl mx-auto leading-relaxed">
+              Skilled professionals dedicated to bringing out your best look with every visit.
+            </p>
+          </motion.div>
+
+          {/* 3 Model Preview Cards */}
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12"
+          >
+            {featuredModels.map((model) => (
+              <motion.div
+                key={model.id}
+                variants={staggerItem}
+                whileHover={{ y: -10, scale: 1.02 }}
+                transition={{ duration: 0.35 }}
+                className="group relative rounded-3xl overflow-hidden"
+                style={{
+                  background: 'rgba(255,255,255,0.04)',
+                  border: '1px solid rgba(212,175,55,0.2)',
+                  boxShadow: '0 8px 40px rgba(0,0,0,0.4)',
+                }}
+              >
+                {/* Image */}
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={model.img}
+                    alt={model.name}
+                    className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-spa-dark via-spa-dark/30 to-transparent" />
+                  {/* Star badge */}
+                  <div
+                    className="absolute top-4 right-4 w-9 h-9 rounded-full flex items-center justify-center"
+                    style={{ background: 'rgba(212,175,55,0.25)', border: '1px solid rgba(212,175,55,0.5)' }}
+                  >
+                    <FiStar size={15} className="text-gold-400" />
+                  </div>
+                </div>
+
+                {/* Info */}
+                <div className="p-5 text-center">
+                  <h3 className="text-white font-serif font-bold text-xl mb-1">{model.name}</h3>
+                  <p className="text-gold-400 text-sm font-medium">{model.specialty}</p>
+                </div>
+
+                {/* Hover overlay */}
+                <div
+                  className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{ background: 'rgba(10,8,20,0.80)', backdropFilter: 'blur(6px)' }}
+                >
+                  <p className="text-white font-serif font-bold text-xl mb-1">{model.name}</p>
+                  <p className="text-gold-400 text-sm mb-5">{model.specialty}</p>
+                  <Link
+                    to="/booking"
+                    className="px-6 py-2.5 rounded-full text-sm font-semibold text-white hover:shadow-luxury transition-all duration-300"
+                    style={{ background: 'linear-gradient(135deg,#d4af37,#b8860b)' }}
+                  >
+                    Book With Her
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* View More Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-center"
+          >
+            <Link
+              to="/models"
+              className="group inline-flex items-center gap-3 px-10 py-4 rounded-full font-semibold text-lg text-white transition-all duration-300 hover:shadow-luxury hover:scale-105"
+              style={{
+                background: 'linear-gradient(135deg, rgba(212,175,55,0.15), rgba(184,134,11,0.1))',
+                border: '1.5px solid rgba(212,175,55,0.5)',
+              }}
+            >
+              <FiUsers size={20} className="text-gold-400" />
+              <span>View All Models</span>
+              <FiArrowRight
+                size={18}
+                className="text-gold-400 group-hover:translate-x-1 transition-transform duration-300"
+              />
+            </Link>
           </motion.div>
         </div>
       </section>
