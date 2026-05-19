@@ -14,8 +14,8 @@ import girl3 from '../assets/model/girl3.jpeg';
 
 const featuredModels = [
   { id: 1, name: 'Ananya Sharma', specialty: 'Bridal & Glam Makeup', img: girl1 },
-  { id: 2, name: 'Priya Mehta',   specialty: 'Skin & Facial Care',   img: girl2 },
-  { id: 3, name: 'Kavya Nair',    specialty: 'Hair Styling Expert',  img: girl3 },
+  { id: 2, name: 'Priya Mehta', specialty: 'Skin & Facial Care', img: girl2 },
+  { id: 3, name: 'Kavya Nair', specialty: 'Hair Styling Expert', img: girl3 },
 ];
 
 const categories = ['All', 'Face', 'Body', 'Hair', 'Beauty', 'Wellness'];
@@ -77,11 +77,10 @@ const ServicesPage = () => {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
-                  activeCategory === cat
+                className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${activeCategory === cat
                     ? 'bg-gold-500 text-white shadow-luxury'
                     : 'bg-white/5 text-nude-300 hover:bg-white/10 hover:text-white'
-                }`}
+                  }`}
               >
                 {cat}
               </button>
