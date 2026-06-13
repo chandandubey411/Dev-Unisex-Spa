@@ -76,7 +76,7 @@ const Contact = () => {
               <div>
                 <h2 className="text-3xl font-serif font-bold text-white mb-3">Visit Our Spa</h2>
                 <p className="text-nude-300 leading-relaxed text-sm mb-6">
-                  Come experience the luxury of Dev Unisex Spa in person. We're located at The Aranya Hotmart Market, Sector-119, Noida.
+                  Come experience the luxury of Dev Unisex Spa in person. We're located at Rise Madison Square, Sector 1, Greater Noida.
                 </p>
                 <ContactInfo />
               </div>

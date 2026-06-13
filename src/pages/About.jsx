@@ -32,10 +32,10 @@ const AboutHero = () => (
             <span className="gradient-text italic">Dev Unisex Spa</span>
           </motion.h1>
           <motion.p variants={staggerItem} className="text-nude-200 text-lg leading-relaxed">
-            Dev Unisex Spa was founded with a singular vision: to create Noida's most exceptional wellness sanctuary where every guest experiences true luxury and healing.
+            Dev Unisex Spa was founded with a singular vision: to create Greater Noida's most exceptional wellness sanctuary where every guest experiences true luxury and healing.
           </motion.p>
           <motion.p variants={staggerItem} className="text-nude-300 leading-relaxed">
-            Located in the heart of Sector-119, The Aranya Hotmart Market, our spa combines time-tested therapeutic traditions with innovative modern wellness techniques, delivered by our highly-trained team of certified therapists.
+            Located in the heart of Sector 1, Rise Madison Square, Greater Noida, our spa combines time-tested therapeutic traditions with innovative modern wellness techniques, delivered by our highly-trained team of certified therapists.
           </motion.p>
           <motion.div variants={staggerItem} className="flex gap-4">
             <Link to="/booking" className="btn-primary">
@@ -86,7 +86,7 @@ const Mission = () => (
       <div className="grid md:grid-cols-3 gap-8">
         {[
           { icon: FiAward, title: "Our Mission", text: "To provide a sanctuary of healing and beauty, where every client experiences transformative wellness through expert care and premium treatments.", color: "bg-gold-50 text-gold-600 border-gold-200" },
-          { icon: FiHeart, title: "Our Vision", text: "To be recognized as Noida's leading luxury wellness destination, pioneering innovative spa experiences that inspire total well-being.", color: "bg-blush-50 text-blush-600 border-blush-200" },
+          { icon: FiHeart, title: "Our Vision", text: "To be recognized as Greater Noida's leading luxury wellness destination, pioneering innovative spa experiences that inspire total well-being.", color: "bg-blush-50 text-blush-600 border-blush-200" },
           { icon: FiUsers, title: "Our Values", text: "Excellence, compassion, integrity, and innovation guide every interaction. We celebrate individuality and create personalized experiences for each guest.", color: "bg-sage-50 text-sage-600 border-sage-200" },
         ].map((item, idx) => (
           <motion.div

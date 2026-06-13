@@ -2,16 +2,16 @@
 export const SPA_INFO = {
   name: "Dev Unisex Spa",
   tagline: "Luxury Wellness & Massage Spa",
-  shortDesc: "Premium massage & wellness spa in the heart of Noida",
+  shortDesc: "Premium massage & wellness spa in the heart of Greater Noida",
   phone: "087962 86821",
   phoneLink: "tel:+918796286821",
   email: "devunisexspa@gmail.com",
   emailLink: "mailto:devunisexspa@gmail.com",
-  address: "Shop No. 25, Second Floor, The Aranya Hotmart Market, Sector 119, Noida, Uttar Pradesh 201316",
-  shortAddress: "Sector 119, Noida, UP 201316",
+  address: "Shop No. 25, 1st Floor, Rise Madison Square, Sector 1, Bisrakh Jalalpur, Greater Noida, Uttar Pradesh 201318",
+  shortAddress: "Sector 1, Greater Noida, UP 201318",
   hours: "Open 24 Hours",
-  mapLink: "https://maps.google.com/?q=Dev+Unisex+Spa+Sector+119+Noida",
-  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.0!2d77.38!3d28.57!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sDev+Unisex+Spa+Sector+119+Noida!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin",
+  mapLink: "https://maps.google.com/?q=Dev+Unisex+Spa+Rise+Madison+Square+Sector+1+Greater+Noida",
+  mapEmbed: "https://maps.google.com/maps?q=Rise%20Madison%20Square%20Sector%201%20Greater%20Noida&t=&z=15&ie=UTF8&iwloc=&output=embed",
   social: {
     instagram: "https://instagram.com/devunisexspa",
     facebook: "https://facebook.com/devunisexspa",
@@ -75,7 +75,7 @@ export const BENEFITS = [
   {
     image: "https://images.unsplash.com/photo-1583416750470-965b2707b355?w=600&q=80",
     title: "Award Winning",
-    description: "Recognized as one of Noida's best wellness destinations with over 500 five-star reviews.",
+    description: "Recognized as one of Greater Noida's best wellness destinations with over 500 five-star reviews.",
   },
 ];
 

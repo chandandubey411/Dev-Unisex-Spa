@@ -88,7 +88,7 @@ const Booking = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-spa-dark/90 to-transparent flex items-end p-6">
                     <div>
                       <div className="text-white font-serif font-bold text-lg">Dev Unisex Spa</div>
-                      <div className="text-gold-400 text-sm">Sector-119, Noida</div>
+                      <div className="text-gold-400 text-sm">Sector 1, Greater Noida</div>
                     </div>
                   </div>
                 </div>

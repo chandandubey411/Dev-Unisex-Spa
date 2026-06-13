@@ -90,7 +90,7 @@ const AboutPreview = () => {
               variants={staggerItem}
               className="text-nude-200 leading-relaxed text-lg"
             >
-              Dev Unisex Spa is Noida's premier luxury wellness destination, nestled in the heart of Sector-119. We blend ancient healing traditions with modern therapeutic techniques to deliver an unmatched spa experience.
+              Dev Unisex Spa is Greater Noida's premier luxury wellness destination, nestled in the heart of Sector 1. We blend ancient healing traditions with modern therapeutic techniques to deliver an unmatched spa experience.
             </motion.p>
 
             <motion.p

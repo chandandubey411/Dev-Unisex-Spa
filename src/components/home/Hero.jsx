@@ -48,7 +48,7 @@ const Hero = () => {
             <div className="flex gap-0.5">
               {[1,2,3,4,5].map(i => <FiStar key={i} size={12} className="fill-gold-400 text-gold-400" />)}
             </div>
-            <span>Noida's #1 Luxury Spa</span>
+            <span>Greater Noida's #1 Luxury Spa</span>
             <span className="text-gold-400">•</span>
             <span className="text-green-400 font-medium">Open 24/7</span>
           </motion.div>
@@ -72,7 +72,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-lg sm:text-xl text-white/75 leading-relaxed mb-10 max-w-xl"
           >
-            Premium massage & wellness spa in Sector-119, Noida. Experience luxury treatments by expert therapists — available 24 hours a day, every day.
+            Premium massage & wellness spa in Sector 1, Greater Noida. Experience luxury treatments by expert therapists — available 24 hours a day, every day.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -119,7 +119,7 @@ const Hero = () => {
               </div>
               <div>
                 <div className="text-white font-medium text-xs">Location</div>
-                <div className="text-white/60 text-xs">Sector-119, Noida</div>
+                <div className="text-white/60 text-xs">Sector 1, Greater Noida</div>
               </div>
             </a>
             <div className="w-px h-8 bg-spa-dark/20 self-center" />

@@ -29,7 +29,7 @@ const contactCards = [
   {
     icon: FiMapPin,
     title: "Get Directions",
-    content: "Sector-119",
+    content: "Sector-1",
     sub: "View on Map",
     href: SPA_INFO.mapLink,
   },

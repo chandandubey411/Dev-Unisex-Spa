@@ -61,7 +61,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Experience the pinnacle of luxury wellness at Dev Unisex Spa. Premium massage, facial, and beauty services available 24/7 in Sector-119, Noida.
+              Experience the pinnacle of luxury wellness at Dev Unisex Spa. Premium massage, facial, and beauty services available 24/7 in Sector 1, Greater Noida.
             </p>
             {/* Social Icons */}
             <div className="flex items-center gap-3">
